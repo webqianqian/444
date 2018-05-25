@@ -11,28 +11,28 @@
 			background: orange;
 			color: #fff;
 			font-size: 50px;
-			opacity: .5;
+			/* opacity: .5;
 			position: absolute;
-			top: 0;
+			top: 0; */
 		}
 	</style>
 </head>
 <body>
 	<div id="box" class="box"></div>
-	<a href="http://www.baidu.com">百度</a>
+	<!-- <a href="http://www.baidu.com">百度</a> -->
 	<script>
 		var oDiv = document.getElementById("box");
-		oDiv.addEventListener("touchstart", function(e){
+		/*oDiv.addEventListener("touchstart", function(e){
 			this.style.display="none";
 			e.preventDefault();
-		});
-		
-		/*oDiv.addEventListener("touchmove", function(e){
+		});*/
+
+		oDiv.addEventListener("touchmove", function(e){
 			this.innerHTML = e.targetTouches.length;
 		});
-		oDiv.addEventListener("touched", function(e){
-			console.log(e.changedTouches.length);
-		})*/
+		// oDiv.addEventListener("touched", function(e){
+		// 	console.log(e.changedTouches.length);
+		// })
 	</script>
 </body>
 </html>
